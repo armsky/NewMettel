@@ -34,6 +34,7 @@ public final class R {
         public static final int imageView1=0x7f050002;
         public static final int inputps=0x7f05000a;
         public static final int inputusr=0x7f050007;
+        public static final int listView1=0x7f05001b;
         public static final int loginError=0x7f05000f;
         public static final int loginErrorView=0x7f050010;
         public static final int parseJSON=0x7f050017;
