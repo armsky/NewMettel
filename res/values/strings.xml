@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">OneMettel</string>
+    <string name="usrname">User Name</string>
+    <string name="psword">Password</string>
+    <string name="remember">Remember me</string>
+    <string name="signin">Sign in</string>
+    <string name="forgot">Forget password?</string>
+    <string name="createaccount">Create an account</string>
+    <string name="right">© 1996–2011 Metropolitan Telecommunications. All rights reserved.</string>
+
+    <string name="parsejson">Parse JSON</string>
+</resources>

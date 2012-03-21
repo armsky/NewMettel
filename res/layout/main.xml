@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wall_bd"
+    android:baselineAligned="false" >
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="201dp"
+            android:layout_height="158dp"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_125_94" />
+
+    </FrameLayout>
+	<RelativeLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/frameLayout1">
+        
+        <LinearLayout
+            android:id="@+id/frameLayout5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/usrname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:text="@string/usrname"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/inputusr"
+                    android:layout_width="120dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_toRightOf="@id/usrname"
+                    android:inputType="textVisiblePassword"
+                    android:textSize="12sp" >
+
+                    <requestFocus />
+                </EditText>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/psword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="52dp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/psword"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <EditText
+                    android:id="@+id/inputps"
+                    android:layout_width="120dp"
+                    android:layout_height="34dp"
+                    android:textSize="12sp"
+                    android:layout_toRightOf="@id/psword"
+                    android:inputType="textPassword" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <CheckBox
+                    android:id="@+id/checkBox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/remember" />
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/signButton"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:text="@string/signin" />
+                
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/loginError"
+                android:layout_width="match_parent"
+                android:layout_height="25dp" >
+
+                <TextView
+                    android:id="@+id/loginErrorView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayout8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                
+                <TextView
+                    android:id="@+id/forgot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:text="@string/forgot"
+                    android:layout_gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayout9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageButton
+                    android:id="@+id/imageButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/createacount"
+                    android:background="@null"/>
+
+            </FrameLayout>
+            
+        </LinearLayout>
+
+    </RelativeLayout>
+
+	<FrameLayout
+	    android:id="@+id/frameLayout3"
+	    android:layout_width="match_parent"
+	    android:layout_height="20dp"
+	    android:layout_alignParentBottom="true" >
+
+	    <TextView
+	        android:id="@+id/right"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="10sp"
+	        android:layout_gravity="center"
+	        android:text="@string/right"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+	</FrameLayout>
+
+</RelativeLayout>
